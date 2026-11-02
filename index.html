@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Rent — Închiriere automobile</title>
+  <meta name="description" content="Închiriază automobilul potrivit: flotă variată, tarife clare și rezervare în câțiva pași.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">AUTO<span>RENT</span></a>
+      <nav class="nav" aria-label="Meniu principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="booking.html" class="btn btn--primary header__cta">Rezervă</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <h1>Închiriază mașina potrivită</h1>
+        <p>Flotă variată, tarife clare cu depozitul la vedere și rezervare în câțiva pași. De la un economy pentru oraș până la un minivan pentru toată familia.</p>
+        <div class="hero__actions">
+          <a href="booking.html" class="btn btn--primary">Rezervă acum</a>
+          <a href="fleet.html" class="btn btn--outline">Vezi flota</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick container" aria-labelledby="quick-title">
+      <h2 id="quick-title" class="visually-hidden">Căutare rapidă</h2>
+      <form class="quick__form" action="booking.html" method="get">
+        <div class="field">
+          <label for="pickup">Locație preluare</label>
+          <select id="pickup" name="pickup">
+            <option>Chișinău — Centru</option>
+            <option>Aeroportul Chișinău</option>
+            <option>Gara Auto Centrală</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date-from">Data preluare</label>
+          <input type="date" id="date-from" name="date-from">
+        </div>
+        <div class="field">
+          <label for="date-to">Data returnare</label>
+          <input type="date" id="date-to" name="date-to">
+        </div>
+        <button type="submit" class="btn btn--primary">Caută</button>
+      </form>
+    </section>
+
+    <section class="section container" aria-labelledby="fleet-title">
+      <div class="section__head">
+        <h2 id="fleet-title">Alege categoria</h2>
+        <a href="fleet.html" class="link">Toată flota</a>
+      </div>
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__visual card__visual--economy" role="img" aria-label="Automobil economy"></div>
+          <div class="card__body">
+            <h3>Economy</h3>
+            <p>Compacte și economice, ideale pentru oraș.</p>
+            <p class="price">de la 350 MDL<span> / zi</span></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__visual card__visual--comfort" role="img" aria-label="Automobil comfort"></div>
+          <div class="card__body">
+            <h3>Comfort</h3>
+            <p>Sedanuri spațioase pentru drumuri lungi.</p>
+            <p class="price">de la 550 MDL<span> / zi</span></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__visual card__visual--suv" role="img" aria-label="Automobil SUV"></div>
+          <div class="card__body">
+            <h3>SUV</h3>
+            <p>Garda la sol înaltă și portbagaj mare.</p>
+            <p class="price">de la 750 MDL<span> / zi</span></p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__visual card__visual--minivan" role="img" aria-label="Automobil minivan"></div>
+          <div class="card__body">
+            <h3>Minivan</h3>
+            <p>Până la 7 locuri, pentru familii și grupuri.</p>
+            <p class="price">de la 900 MDL<span> / zi</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--surface" aria-labelledby="why-title">
+      <div class="container">
+        <h2 id="why-title">De ce Auto Rent</h2>
+        <div class="grid grid--3">
+          <div class="feature">
+            <h3>Tarife transparente</h3>
+            <p>Prețul pe zi, depozitul și condițiile sunt afișate înainte de rezervare.</p>
+          </div>
+          <div class="feature">
+            <h3>Preluare rapidă</h3>
+            <p>Trei locații în oraș și la aeroport, cu program extins.</p>
+          </div>
+          <div class="feature">
+            <h3>Opțiuni suplimentare</h3>
+            <p>Șofer, scaun pentru copii, GPS și livrare în oraș.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="more-title">
+      <h2 id="more-title" class="visually-hidden">Tarife și servicii</h2>
+      <div class="grid grid--2">
+        <a href="pricing.html" class="panel">
+          <h3>Tarife și condiții</h3>
+          <p>Vezi prețul pe zi, depozitul și ce include închirierea.</p>
+          <span class="link">Vezi tarifele</span>
+        </a>
+        <a href="services.html" class="panel">
+          <h3>Servicii suplimentare</h3>
+          <p>Adaugă șofer, scaun pentru copii, GPS sau livrare în oraș.</p>
+          <span class="link">Vezi serviciile</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="logo">AUTO<span>RENT</span></a>
+        <p class="muted">Prețurile și datele de pe site au caracter demonstrativ.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p class="muted">+373 22 000 000<br>office@autorent.example<br>Luni–Duminică, 08:00–20:00</p>
+      </div>
+      <div>
+        <h3>Navigare</h3>
+        <ul class="footer__links">
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
